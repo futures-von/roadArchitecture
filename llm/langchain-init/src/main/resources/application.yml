@@ -1,0 +1,35 @@
+server:
+  port: 9000
+  servlet:
+    encoding:
+      charset: utf-8
+      enabled: true
+      force: true
+spring:
+  application:
+    name: langchain-init
+  data:
+    redis:
+      host: 10.22.82.52
+      port: 6379
+      password: admin@123
+      database: 0
+      timeout: 3000
+      connect-timeout: 3000
+
+langchain4j:
+  community:
+    dashsdope:
+      streaming-chat-model:
+        api-key: ${aliQwen-api}
+        model-name: qwen-plus
+      chat-model:
+        api-key: ${aliQwen-api}
+        model-name: qwen-plus
+
+
+# 只有日志级别调整为debug级别，同时配置以上Langchain日志输出开关才有效
+logging:
+  level:
+    dev:
+      langchain4j: DEBUG
