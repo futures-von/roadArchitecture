@@ -9,15 +9,14 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
-        <module>common</module>
-        <module>design-patten</module>
-        <module>data-structure</module>
-        <module>jvm</module>
-        <module>jmm</module>
-        <module>hive</module>
-        <module>hive</module>
-        <module>spark</module>
         <module>base</module>
+        <module>common</module>
+        <module>data-structure</module>
+        <module>design-patten</module>
+        <module>hive</module>
+        <module>jmm</module>
+        <module>jvm</module>
+        <module>spark</module>
         <module>llm</module>
     </modules>
 
